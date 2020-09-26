@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_axx_palette_tracking_tree" model="ir.ui.view">
+        <field name="name">axx.palette.tracking.tree</field>
+        <field name="model">axx.palette.tracking</field>
+        <field name="priority" eval="8"/>
+        <field name="arch" type="xml">
+            <tree string="Palette Tracking">
+                <field name="axx_picking_id"/>
+                <field name="axx_partner_id" invisible="context.get('from_partner',False)"/>
+                <field name="axx_license_plate"/>
+                <field name="axx_picking_partner_id"/>
+                <field name="axx_picking_date_done"/>
+                <field name="axx_palette_count_plus"/>
+                <field name="axx_palette_count_minus"/>
+                <field name="axx_balance"/>
+            </tree>
+        </field>
+    </record>
+    <record id="view_axx_palette_tracking_form" model="ir.ui.view">
+        <field name="name">axx.palette.tracking.form</field>
+        <field name="model">axx.palette.tracking</field>
+        <field name="priority" eval="8"/>
+        <field name="arch" type="xml">
+            <form string="Palette Tracking">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="axx_picking_id"/>
+                            <field name="axx_license_plate"/>
+                            <field name="axx_picking_partner_id"/>
+                            <field name="axx_picking_date_done"/>
+
+                        </group>
+                        <group>
+                            <field name="axx_partner_id"/>
+                            <field name="axx_palette_count_plus"/>
+                            <field name="axx_palette_count_minus"/>
+                            <field name="axx_balance"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="view_axx_palette_tracking_search" model="ir.ui.view">
+        <field name="name">axx.palette.tracking.search</field>
+        <field name="model">axx.palette.tracking</field>
+        <field name="arch" type="xml">
+            <search string="Palette Tracking">
+                <field name="axx_picking_id"/>
+                <field name="axx_partner_id"/>
+                <field name="axx_license_plate"/>
+                <field name="axx_picking_partner_id"/>
+                <field name="axx_picking_date_done"/>
+                <separator/>
+            </search>
+        </field>
+    </record>
+
+
+    <record model="ir.actions.act_window" id="act_open_axx_palette_tracking_view">
+        <field name="name">Palette Tracking</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">axx.palette.tracking</field>
+        <field name="view_mode">tree,form</field>
+        <field name="search_view_id" ref="view_axx_palette_tracking_search"/>
+    </record>
+    <record model="ir.actions.act_window.view" id="act_open_axx_palette_tracking_view_form">
+        <field name="act_window_id" ref="act_open_axx_palette_tracking_view"/>
+        <field name="sequence" eval="20"/>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="view_axx_palette_tracking_form"/>
+    </record>
+    <record model="ir.actions.act_window.view" id="act_open_axx_palette_tracking_view_tree">
+        <field name="act_window_id" ref="act_open_axx_palette_tracking_view"/>
+        <field name="sequence" eval="10"/>
+        <field name="view_mode">tree</field>
+        <field name="view_id" ref="view_axx_palette_tracking_tree"/>
+    </record>
+
+    <menuitem id="menu_axx_palette_tracking_view"
+              name="Palette Tracking"
+              action="act_open_axx_palette_tracking_view"
+              parent="stock.menu_stock_warehouse_mgmt"
+              sequence="100"/>
+</odoo>

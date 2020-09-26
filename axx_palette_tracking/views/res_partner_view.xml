@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="res_partner_view_palette_buttons" model="ir.ui.view">
+        <field name="name">res.partner.view.palette.buttons</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="priority" eval="9"/>
+        <field name="arch" type="xml">
+            <div name="button_box" position="inside">
+                <button class="oe_stat_button" name="%(axx_palette_tracking.act_open_axx_palette_tracking_view)d" type="action"
+                        attrs="{'invisible': [('is_company', '=', False)]}"
+                        context="{'search_default_axx_partner_id': active_id,'from_partner': True}"
+                        icon="fa-arrow-right">
+                    <field string="Palettes" name="palette_count" widget="statinfo"/>
+                </button>
+            </div>
+        </field>
+    </record>
+
+</odoo>
