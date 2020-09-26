@@ -1,0 +1,121 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* axx_palette_tracking
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-09-26 11:11+0000\n"
+"PO-Revision-Date: 2020-09-26 11:11+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: axx_palette_tracking
+#: model:ir.model.fields,field_description:axx_palette_tracking.field_axx_palette_tracking__axx_balance
+msgid "Balance"
+msgstr "Saldo"
+
+#. module: axx_palette_tracking
+#: model:ir.model,name:axx_palette_tracking.model_res_partner
+msgid "Contact"
+msgstr "Kontakt"
+
+#. module: axx_palette_tracking
+#: model:ir.model.fields,field_description:axx_palette_tracking.field_axx_palette_tracking__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: axx_palette_tracking
+#: model:ir.model.fields,field_description:axx_palette_tracking.field_axx_palette_tracking__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: axx_palette_tracking
+#: model:ir.model.fields,field_description:axx_palette_tracking.field_axx_palette_tracking__axx_picking_date_done
+msgid "Date of Transfer"
+msgstr "Buchungsdatum"
+
+#. module: axx_palette_tracking
+#: model:ir.model.fields,field_description:axx_palette_tracking.field_axx_palette_tracking__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: axx_palette_tracking
+#: model:ir.model.fields,field_description:axx_palette_tracking.field_axx_palette_tracking__id
+msgid "ID"
+msgstr ""
+
+#. module: axx_palette_tracking
+#: model:ir.model.fields,field_description:axx_palette_tracking.field_axx_palette_tracking____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: axx_palette_tracking
+#: model:ir.model.fields,field_description:axx_palette_tracking.field_axx_palette_tracking__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: axx_palette_tracking
+#: model:ir.model.fields,field_description:axx_palette_tracking.field_axx_palette_tracking__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: axx_palette_tracking
+#: model:ir.model.fields,field_description:axx_palette_tracking.field_axx_palette_tracking__axx_license_plate
+msgid "Licence Plate"
+msgstr "Kfz Kennzeichen"
+
+#. module: axx_palette_tracking
+#: model:ir.model.fields,field_description:axx_palette_tracking.field_axx_palette_tracking__axx_palette_count_plus
+msgid "Palette +"
+msgstr "Palettenzahl +"
+
+#. module: axx_palette_tracking
+#: model:ir.model.fields,field_description:axx_palette_tracking.field_axx_palette_tracking__axx_palette_count_minus
+msgid "Palette -"
+msgstr " Palettenzahl -"
+
+#. module: axx_palette_tracking
+#: model:ir.model.fields,field_description:axx_palette_tracking.field_res_partner__palette_count
+#: model:ir.model.fields,field_description:axx_palette_tracking.field_res_users__palette_count
+msgid "Palette Count"
+msgstr ""
+
+#. module: axx_palette_tracking
+#: model:ir.actions.act_window,name:axx_palette_tracking.act_open_axx_palette_tracking_view
+#: model:ir.ui.menu,name:axx_palette_tracking.menu_axx_palette_tracking_view
+#: model_terms:ir.ui.view,arch_db:axx_palette_tracking.view_axx_palette_tracking_form
+#: model_terms:ir.ui.view,arch_db:axx_palette_tracking.view_axx_palette_tracking_search
+#: model_terms:ir.ui.view,arch_db:axx_palette_tracking.view_axx_palette_tracking_tree
+msgid "Palette Tracking"
+msgstr "Palettenkonto"
+
+#. module: axx_palette_tracking
+#: model_terms:ir.ui.view,arch_db:axx_palette_tracking.res_partner_view_palette_buttons
+msgid "Palettes"
+msgstr ""
+
+#. module: axx_palette_tracking
+#: model:ir.model.fields,field_description:axx_palette_tracking.field_axx_palette_tracking__axx_partner_id
+msgid "Partner"
+msgstr ""
+
+#. module: axx_palette_tracking
+#: model:ir.model.fields,field_description:axx_palette_tracking.field_axx_palette_tracking__axx_picking_id
+msgid "Picking"
+msgstr "Lieferschein"
+
+#. module: axx_palette_tracking
+#: model:ir.model.fields,field_description:axx_palette_tracking.field_axx_palette_tracking__axx_picking_partner_id
+msgid "Picking Partner"
+msgstr "Lieferort"
+
+#. module: axx_palette_tracking
+#: model:ir.model,name:axx_palette_tracking.model_axx_palette_tracking
+msgid "axx.palette.tracking"
+msgstr ""
